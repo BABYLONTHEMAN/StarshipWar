@@ -1,0 +1,32 @@
+$(SolutionDir)/../../External_libs/GLEW/include
+$(SolutionDir)/../../External_libs/GLFW/include
+$(SolutionDir)/../../External_libs/GLM
+$(SolutionDir)/../../External_libs/ASSIMP/include
+.....
+additional
+$(SolutionDir)/../../External_libs/GLEW/lib/Release/Win32
+$(SolutionDir)/../../External_libs/GLFW/lib-vc2015
+$(SolutionDir)/../../External_libs/ASSIMP/lib
+
+
+**********************************************************************************************
+//// DO NOT COPY PASTE THESE .LIB STUFF YOU MUST YOU MUST TYPE IT OR IT DOES NOT WORK 
+opengl32.lib                                                                                 *
+glew32.lib                                                                                   *
+glfw3.lib                                                                                    *
+assimp-vc140-mt.lib                                                                          *
+//// DO NOT COPY PASTE THESE .LIB STUFF YOU MUST YOU MUST TYPE IT OR IT DOES NOT WORK        *
+**********************************************************************************************
+
+
+
+**********************************************************************************************
+ADD THIS mainWindow.swapbuffers(); INTO YOUR MAIN.CPP or Source.cpp                          *
+THIS ONE>>>>>>>>>>    mainWindow.swapbuffers();  <<<<<<  THIS ONE                            *
+                                                                                             *
+AFTER RENDERMODEL OR IT DOES NOT WORK HAVE TO PUT IT THERE LIKE THIS                         *
+                                                                                             *
+	 Trump.RenderModel();                                                                *
+	 glUseProgram(0);                                                                    *
+	 mainWindow.swapbuffers();                                                           *
+**********************************************************************************************
